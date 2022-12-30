@@ -19,18 +19,18 @@ def get_version(rel_path: str) -> str:
 
 
 setup(
-    name='chris-plugin-template',
-    version=get_version('app.py'),
-    description='A ChRIS DS plugin template',
+    name='adapt_object_mesh',
+    version=get_version('adapt_object_mesh_wrapper.py'),
+    description='A ChRIS plugin wrapper around adapt_object_mesh from MINC tools',
     author='FNNDSC',
     author_email='dev@babyMRI.org',
-    url='https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules=['app'],
+    url='https://github.com/FNNDSC/pl-adapt_object_mesh',
+    py_modules=['adapt_object_mesh_wrapper'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = app:main'
+            'adapt_object_mesh_wrapper = adapt_object_mesh_wrapper:main'
         ]
     },
     classifiers=[

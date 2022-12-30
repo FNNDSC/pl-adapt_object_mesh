@@ -4,10 +4,10 @@
 FROM docker.io/python:3.11.0-slim-bullseye
 
 LABEL org.opencontainers.image.authors="FNNDSC <dev@babyMRI.org>" \
-      org.opencontainers.image.title="ChRIS Plugin Title" \
-      org.opencontainers.image.description="A ChRIS plugin that..."
+      org.opencontainers.image.title="adapt_object_mesh" \
+      org.opencontainers.image.description="A ChRIS plugin wrapper around adapt_object_mesh from MINC tools"
 
-WORKDIR /usr/local/src/app
+WORKDIR /usr/local/src/pl-adapt_object_mesh
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
@@ -16,4 +16,4 @@ COPY . .
 ARG extras_require=none
 RUN pip install ".[${extras_require}]"
 
-CMD ["commandname", "--help"]
+CMD ["adapt_object_mesh_wrapper", "--help"]

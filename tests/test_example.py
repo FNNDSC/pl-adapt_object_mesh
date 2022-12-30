@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from app import parser, main
+from adapt_object_mesh_wrapper import parser, main
 
 
 def test_main(tmp_path: Path):
