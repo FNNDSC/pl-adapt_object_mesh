@@ -22,11 +22,11 @@ setup(
     name='adapt_object_mesh',
     version=get_version('adapt_object_mesh_wrapper.py'),
     description='A ChRIS plugin wrapper around adapt_object_mesh from MINC tools',
-    author='FNNDSC',
-    author_email='dev@babyMRI.org',
+    author='Jennings Zhang',
+    author_email='Jennings.Zhang@childrens.harvard.edu',
     url='https://github.com/FNNDSC/pl-adapt_object_mesh',
     py_modules=['adapt_object_mesh_wrapper'],
-    install_requires=['chris_plugin'],
+    install_requires=['chris_plugin', 'loguru'],
     license='MIT',
     entry_points={
         'console_scripts': [
