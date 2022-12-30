@@ -13,9 +13,9 @@
 # STEP 1. Change these values to your liking.
 
 PLUGIN_NAME="$(basename $(dirname $(realpath $0)))"  # name of current directory
-PLUGIN_TITLE='My ChRIS Plugin'
-SCRIPT_NAME='commandname'
-DESCRIPTION='A ChRIS plugin to do something awesome'
+PLUGIN_TITLE='adapt_object_mesh'
+SCRIPT_NAME='adapt_object_mesh_wrapper'
+DESCRIPTION='A ChRIS plugin wrapper around adapt_object_mesh from MINC tools'
 ORGANIZATION='FNNDSC'
 EMAIL='dev@babyMRI.org'
 
@@ -30,7 +30,7 @@ ENABLE_ACTIONS_BUILD=yes
 
 # STEP 2. Uncomment the line below.
 
-#READY=yes
+READY=yes
 
 # STEP 3. Run: ./bootstrap.sh
 
