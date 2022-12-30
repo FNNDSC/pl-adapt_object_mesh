@@ -10,8 +10,8 @@
 _ds_ plugin wrapper for
 [`adapt_object_mesh`](https://github.com/aces/surface-extraction/blob/clasp_3-0-3/src/adapt_object_mesh.c),
 a polygonal mesh smoothing program from [CIVET](http://mcin.ca/technology/civet/).
-It implements 
-It runs `adapt_object_mesh` on every `.obj` file in its input directory,
+`adapt_object_mesh` implements Taubin smoothing.
+`pl-adapt_object_mesh` runs `adapt_object_mesh` on every `.obj` file in its input directory,
 writing outputs to an output directory, and printing logs to log files
 which are created next to the output surfaces.
 
